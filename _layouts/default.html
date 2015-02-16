@@ -15,8 +15,8 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Family-diary</h1>
-        <p>The Hoshor Family Diary</p>
+        <h1>The Hoshor Family Diary</h1>
+        <p>Every-day stuff.</p>
         <ul class="posts">
           {% for post in site.posts %}
             <li class="view"><span>{{ post.date | date_to_string }}</span> &raquo; <a href="/family-diary{{ post.url }}">{{ post.title }}</a></li>
@@ -25,11 +25,11 @@
         <p class="view"><a href="https://github.com/russianryebread/family-diary"><small></small></a></p>
       </header>
       <section>
-        <h1><a id="title" class="anchor" href="" aria-hidden="true"><span class="octicon octicon-link">{{title}}</span></a></h1>
+        <h1><a id="title" class="anchor" href="/family-dairy/" aria-hidden="true"><span class="octicon octicon-link">{{title}}</span></a></h1>
 
-<h3><a id="subtitle" class="anchor" href="#the-hoshor-family-diary" aria-hidden="true"><span class="octicon octicon-link"></span></a>{{subtitle}}</h3>
+        <h3><a id="subtitle" class="anchor" href="#the-hoshor-family-diary" aria-hidden="true"><span class="octicon octicon-link"></span></a>{{subtitle}}</h3>
 
-<p>Just a place to post our family's daily happenings.</p>
+        <p>Just a place to post our family's daily happenings.</p>
       </section>
       <section>
         {{content}}
