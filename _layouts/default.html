@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>{{title}}</title>
+    <title>{{post.title}}</title>
 
     <link rel="stylesheet" href="/family-diary/stylesheets/styles.css">
     <link rel="stylesheet" href="/family-diary/stylesheets/pygment_trac.css">
@@ -25,11 +25,17 @@
         <p class="view"><a href="https://github.com/russianryebread/family-diary"><small></small></a></p>
       </header>
       <section>
-        <h1><a id="title" class="anchor" href="/family-dairy/" aria-hidden="true"><span class="octicon octicon-link">{{title}}</span></a></h1>
-
-        <h3><a id="subtitle" class="anchor" href="#the-hoshor-family-diary" aria-hidden="true"><span class="octicon octicon-link"></span></a>{{subtitle}}</h3>
-
-        <p>Just a place to post our family's daily happenings.</p>
+        <h1 class="title">
+          <a class="anchor" href="/family-diary{{ post.url }}" aria-hidden="true">
+            <span class="octicon octicon-link">{{post.title}}</span>
+          </a>
+        </h1>
+        <h3>
+          <a id="subtitle" class="anchor" href="#the-hoshor-family-diary" aria-hidden="true">
+            <span class="octicon octicon-link">{{ post.date | date_to_string }}</span>
+          </a>
+          <small>by Ryan &amp; Inna Hoshor</small>
+        </h3>
       </section>
       <section>
         {{content}}
@@ -38,6 +44,6 @@
         <p>This project is maintained by <a href="https://github.com/russianryebread">russianryebread</a></p>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+    <script src="/family-diary/javascripts/scale.fix.js"></script>
   </body>
 </html>
