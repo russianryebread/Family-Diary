@@ -1,0 +1,10 @@
+      <header>
+        <h1>The Hoshor Family Diary</h1>
+        <p>Every-day stuff.</p>
+        <ul class="posts">
+          {% for post in site.posts %}
+            <li class="view"><span>{{ post.date | date_to_string }}</span> &raquo; <a href="/family-diary{{ post.url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+        <p class="view"><a href="https://github.com/russianryebread/family-diary"><small></small></a></p>
+      </header>

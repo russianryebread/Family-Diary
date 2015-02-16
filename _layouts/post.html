@@ -1,6 +1,15 @@
 ---
 layout: default
 ---
+<section>
+	<h1 class="title">
+		<a class="anchor" href="/family-diary" aria-hidden="true"><span class="octicon octicon-link">{{ page.title }}</span></a>
+	</h1>
+	<h3>
+		<a id="subtitle" class="anchor" href="#the-hoshor-family-diary" aria-hidden="true"><span class="octicon octicon-link">{{ page.date | date_to_string }}</span></a>
+		<small>by Ryan &amp; Inna Hoshor</small>
+	</h3>
+</section>
 <section class="post">
     {{content}}
 </section>
