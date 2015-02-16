@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>{{title}}</title>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="/family-diary/stylesheets/styles.css">
+    <link rel="stylesheet" href="/family-diary/stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -19,7 +19,7 @@
         <p>The Hoshor Family Diary</p>
         <ul class="posts">
           {% for post in site.posts %}
-            <li class="view"><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+            <li class="view"><span>{{ post.date | date_to_string }}</span> &raquo; <a href="/family-diary/{{ post.url }}">{{ post.title }}</a></li>
           {% endfor %}
         </ul>
         <p class="view"><a href="https://github.com/russianryebread/family-diary"><small></small></a></p>
